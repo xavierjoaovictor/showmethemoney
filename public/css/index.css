@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900");
+body, html {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  overflow-x: hidden; }
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
+
+#MainContainer {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  #MainContainer #MainOverlay {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .6; }
+
+#MainContent {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; }
+  #MainContent h1 {
+    font-family: 'Montserrat', Arial;
+    text-align: center;
+    color: white;
+    font-size: 4rem; }
+  #MainContent #MainHeader {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px; }
+    #MainContent #MainHeader #HeaderLogo {
+      font-family: 'Montserrat', Arial;
+      text-align: center;
+      color: white;
+      font-size: 2.0rem; }
+    #MainContent #MainHeader #HeaderMenu ul li {
+      display: inline-block; }
+  #MainContent p {
+    text-align: center; }
+  #MainContent #MainHeader {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0; }
+
+#LinksContainer {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 80vh;
+  left: 10%; }
+  @media (max-width: 992px) {
+    #LinksContainer {
+      display: none; } }
+  #LinksContainer .Link {
+    width: 24%;
+    height: 275px;
+    background-color: #212121;
+    color: white; }
+    #LinksContainer .Link .LinkOption {
+      font-size: 13px;
+      color: white;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 30px; }
+    #LinksContainer .Link .LinkHeader {
+      width: calc(100% - 40px);
+      height: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: #4e4e4e;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center; }
+      #LinksContainer .Link .LinkHeader .fa {
+        margin-right: 10px; }
+    #LinksContainer .Link .LinkDescription {
+      margin-top: 15px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 13px;
+      line-height: 23px;
+      opacity: .5; }
+
+#SubscriptionForm {
+  height: 500px;
+  position: absolute;
+  top: 125vh;
+  left: 10%;
+  font-size: 13px;
+  text-align: center; }
+  @media (max-width: 992px) {
+    #SubscriptionForm {
+      top: 100vh; } }
+  #SubscriptionForm h2 {
+    font-size: 34px; }
+  #SubscriptionForm #FormDescription {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; }
+  #SubscriptionForm #Form {
+    width: 40%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto; }
+    @media (max-width: 992px) {
+      #SubscriptionForm #Form {
+        width: 80%; } }
+    #SubscriptionForm #Form .Label {
+      width: 100%;
+      text-align: left;
+      margin-top: 20px;
+      margin-bottom: 5px; }
+    #SubscriptionForm #Form input {
+      width: 100%;
+      height: 40px;
+      padding: 15px;
+      border-radius: 4px;
+      border: 1px solid #e6e6e6; }
+    #SubscriptionForm #Form #FormButtonSubmit {
+      height: 30px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      margin-top: 20px;
+      padding: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      background-color: #ffd700;
+      border-bottom: 2px solid #f5881f;
+      cursor: pointer; }
+      #SubscriptionForm #Form #FormButtonSubmit:hover {
+        background-color: #f5881f; }
+
+/*# sourceMappingURL=index.css.map */

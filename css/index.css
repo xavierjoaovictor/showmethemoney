@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900");
+body, html {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  overflow-x: hidden;
+  background-color: #025E91; }
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
+
+#alunos {
+  font-size: 40px;
+  padding-top: 30px; }
+
+#contratados {
+  color: #FFA600; }
+
+#MainContainer {
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/Evento - layout site bg-02.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  #MainContainer #data {
+    font-size: 1.5rem; }
+
+#MainContent {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; }
+  #MainContent h1 {
+    font-family: 'Montserrat', Arial;
+    text-align: center;
+    color: white;
+    font-size: 3.5rem; }
+  #MainContent #MainHeader {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px; }
+    #MainContent #MainHeader #HeaderLogo {
+      font-family: 'Montserrat', Arial;
+      text-align: center;
+      color: white;
+      font-size: 2.0rem; }
+      #MainContent #MainHeader #HeaderLogo img {
+        height: 80px; }
+        @media (max-width: 992px) {
+          #MainContent #MainHeader #HeaderLogo img {
+            height: 40px; } }
+    #MainContent #MainHeader #HeaderMenu ul li {
+      display: inline-block; }
+      #MainContent #MainHeader #HeaderMenu ul li a {
+        color: white;
+        text-decoration: none; }
+  #MainContent p {
+    text-align: center; }
+  #MainContent #MainHeader {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0; }
+  #MainContent #MainButtonCta {
+    height: 30px;
+    color: #e0ff32;
+    border-radius: 4px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: transparent;
+    border: 2px solid #e0ff32;
+    cursor: pointer;
+    text-decoration: none; }
+    #MainContent #MainButtonCta:hover {
+      background-color: #e0ff32;
+      border-color: black;
+      color: black; }
+
+#LinksContainer {
+  display: flex;
+  justify-content: space-between;
+  z-index: 50;
+  position: relative; }
+  @media (max-width: 992px) {
+    #LinksContainer {
+      display: none; } }
+  @media (max-width: 1200px) {
+    #LinksContainer {
+      margin-top: -60px; } }
+  @media (max-width: 1600px) and (min-width: 1201px) {
+    #LinksContainer {
+      margin-top: -60px; } }
+  @media (min-width: 1601px) {
+    #LinksContainer {
+      margin-top: -60px; } }
+  #LinksContainer .Link {
+    width: 24%;
+    height: auto;
+    background-color: white;
+    color: #212121; }
+    #LinksContainer .Link .LinkOption {
+      font-size: 13px;
+      color: #212121;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 30px; }
+      #LinksContainer .Link .LinkOption a {
+        color: #212121;
+        text-decoration: none; }
+    #LinksContainer .Link .LinkHeader {
+      width: calc(100% - 40px);
+      height: 50px;
+      font-weight: 800;
+      justify-content: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: white;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center; }
+      #LinksContainer .Link .LinkHeader .fa {
+        margin-right: 10px; }
+    #LinksContainer .Link .LinkSubHeader {
+      color: #828282;
+      display: flex;
+      justify-content: center;
+      margin-top: -15px;
+      font-weight: 400;
+      font-size: 15px; }
+    #LinksContainer .Link .LinkDescription {
+      margin-top: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 10px; }
+
+#DescriptionContainer {
+  height: auto;
+  font-size: 13px;
+  text-align: center; }
+  #DescriptionContainer #DescriptionHeader {
+    height: 60px;
+    width: auto;
+    margin: 4%;
+    text-align: center;
+    color: white; }
+    @media (max-width: 992px) {
+      #DescriptionContainer #DescriptionHeader {
+        width: 100%;
+        height: auto;
+        text-align: left; } }
+  #DescriptionContainer .description-topic {
+    height: auto;
+    width: auto;
+    margin: 4%;
+    text-align: left;
+    padding-right: 200px; }
+    @media (max-width: 992px) {
+      #DescriptionContainer .description-topic {
+        margin: 0;
+        width: 100%;
+        margin-bottom: 13px; } }
+    #DescriptionContainer .description-topic .description-header {
+      font-weight: 700;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: white; }
+    #DescriptionContainer .description-topic .description-text {
+      font-weight: 400;
+      font-size: 15px;
+      margin-top: 10px;
+      color: #e2e2e2; }
+
+#SubscriptionForm {
+  height: auto;
+  width: 100%;
+  color: white;
+  padding: 30px;
+  background-color: #212121;
+  font-size: 13px;
+  text-align: center; }
+  @media (max-width: 992px) {
+    #SubscriptionForm {
+      padding: 0;
+      padding-top: 30px; } }
+  #SubscriptionForm h2 {
+    font-size: 34px; }
+  #SubscriptionForm #FormDescription {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; }
+    @media (max-width: 992px) {
+      #SubscriptionForm #FormDescription {
+        width: 100%; } }
+  #SubscriptionForm #Form {
+    width: 35%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto; }
+    @media (max-width: 992px) {
+      #SubscriptionForm #Form {
+        width: 80%; } }
+    #SubscriptionForm #Form .Label {
+      width: 100%;
+      text-align: left;
+      margin-top: 20px;
+      margin-bottom: 5px; }
+    #SubscriptionForm #Form input {
+      width: 100%;
+      height: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 4px;
+      border: 1px solid #e6e6e6; }
+    #SubscriptionForm #Form #FormButtonSubmit {
+      height: 30px;
+      width: calc(100% - 40px);
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      margin-top: 20px;
+      padding: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      background-color: #ffd700;
+      color: #212121;
+      border-bottom: 2px solid #f5881f;
+      cursor: pointer; }
+      #SubscriptionForm #Form #FormButtonSubmit:hover {
+        background-color: #f5881f; }
+    #SubscriptionForm #Form #FormSuccess {
+      color: white;
+      padding: 10px; }
+
+#Footer {
+  background-color: #4e4e4e;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+  #Footer p {
+    text-align: center;
+    color: white;
+    margin: 0; }
+    @media (max-width: 992px) {
+      #Footer p {
+        font-size: 10px; } }
+
+#Leads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
+/*# sourceMappingURL=index.css.map */
