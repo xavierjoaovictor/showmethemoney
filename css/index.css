@@ -123,12 +123,18 @@ body, html {
     height: auto;
     background-color: white;
     color: #212121; }
-    @media (max-width: 992px) {
+    @media (max-width: 480px) {
       #LinksContainer .Link {
         margin: 0;
         height: auto;
         margin-bottom: 10px;
         width: 200px; } }
+    @media (min-width: 481px) and (max-width: 992px) {
+      #LinksContainer .Link {
+        margin: 0;
+        height: auto;
+        margin-bottom: 10px;
+        width: 400px; } }
     #LinksContainer .Link .LinkOption {
       font-size: 13px;
       color: #212121;
