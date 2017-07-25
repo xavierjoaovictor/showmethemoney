@@ -62,8 +62,14 @@ body, html {
     font-family: 'Montserrat', Arial;
     text-align: center;
 
+    margin-top: -10%;
+
     color: white;
-    font-size: 3.5rem;
+    font-size: 4rem;
+
+    @media(max-width: 992px){
+      font-size: 2.5rem;
+    }
   }
 
   #MainHeader {
@@ -75,9 +81,9 @@ body, html {
       text-align: center;
       
       img {
-        height: 80px; 
+        height: 100px; 
         @media(max-width: 992px){
-          height: 40px;
+          height: 70px;
         }
       }
 
@@ -145,7 +151,8 @@ body, html {
   position: relative;
 
   @media(max-width: 992px) {
-    display: none;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (max-width: 1200px) {
@@ -168,6 +175,13 @@ body, html {
     height: auto;
     background-color: white;
     color: #212121;
+
+    @media (max-width: 992px) {
+      margin: 0;
+      height: auto;
+      margin-bottom: 10px;
+      width: 200px;
+    }
 
     .LinkOption {
       font-size: 13px;
@@ -240,6 +254,7 @@ body, html {
       width: 100%;
       height: auto;
       text-align: left;
+      margin: 0;
     }
   }
 
@@ -285,8 +300,8 @@ body, html {
   text-align: center;
 
   @media(max-width: 992px) {
-    padding: 0;
-    padding-top: 30px;
+    padding: 30px;
+    width: auto;
   }
 
   h2 {
